@@ -201,8 +201,8 @@ section#category .products {
     margin-bottom: 100px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.5rem;
-    row-gap: 0.5rem;
+    grid-gap: 0.5rem;
+    /* row-gap: 0.5rem; */
 }
 
 section#category .products .category-link {
@@ -258,8 +258,10 @@ section .click-more {
 section .products-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 1rem;
+    grid-auto-rows: minmax(20em, auto);
+    grid-gap: 1rem;
     margin-bottom: 100px;
+    justify-items: center;
     align-content: space-between;
 }
 
@@ -292,9 +294,13 @@ section .products-list .product a .box-info .pd_nm {
 
 /* ------- contents > labels✅ ------- */
 
+section#labels ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+}
+
 section#labels ul li {
-    float: left;
-    width: 20%;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -313,9 +319,31 @@ section#labels ul li:last-child {
 /* =============== footer✅ =============== */
 footer {
     clear: both;
-    padding: 10px 2vw 50px;
+    padding: 20px 2vw;
     background: #eee;
     text-align: left;
+}
+footer #site-map {
+    margin: 0 auto 10vw;
+    width: 60%;
+}
+
+footer #site-map ul {
+    float: left;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin-right: 80px;
+}
+
+footer #site-map ul li {
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+footer #copyright {
+    clear: both;
 }
 
 /* =============== footer fin =============== */
