@@ -387,8 +387,26 @@ footer #copyright {
 
 /* ==================== products_page style ========================= */
 
+/* 사이드바 / 상품 구분 */
+.product-container {
+    display: flex;
+    padding-top: 17vh;
+}
+
+#category-list-sidebar {
+    flex: 1;
+}
+
 #products {
-    padding-top: 100px;
+    flex: 4;
+}
+
+#products .category-title {
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 5vh;
 }
 
 /* ==================== products_page style fin ========================= */
