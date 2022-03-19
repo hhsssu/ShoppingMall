@@ -63,14 +63,6 @@ header .inner-header {
 
 
 /* 네비게이션 정렬 */
-header .inner-header nav ul {
-    align-items: center;
-}
-
-header .inner-header nav ul li {
-    float: left;
-    margin-right: 40px;
-}
 
 /* 메인 네비게이션 마우스 호버 효과 */
 /* 투명도 80% */
@@ -81,13 +73,23 @@ header .inner-header .gnb li a:hover {
 
 header .inner-header .gnb {
     /* background: greenyellow; */
-    margin-left: 10px;
+    margin-right: 8vw;
+    display: flex;
 }
 
-header .inner-header .gnb li a {
-    display: block;
+header .inner-header .gnb a {
     font-weight: 700;
     font-size: 1.1em;
+    margin-right: 2.2vw;
+}
+
+/* 우측 검색/찜/장바구니 배열 */
+header .inner-header .tnb {
+    display: flex;
+}
+
+header .inner-header .tnb a {
+    margin-right: 1.5vw;
 }
 
 /* 돋보기아이콘 클릭 시 실행 */
@@ -343,6 +345,9 @@ section#labels ul li img {
 /* ------- contents > labels fin ------- */
 
 
+
+
+
 /* =============== contents fin ============== */
 
 
@@ -378,3 +383,12 @@ footer #copyright {
 }
 
 /* =============== footer fin =============== */
+
+
+/* ==================== products_page style ========================= */
+
+#products {
+    padding-top: 100px;
+}
+
+/* ==================== products_page style fin ========================= */
