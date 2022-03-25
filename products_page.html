@@ -30,21 +30,19 @@
 
                 <!-- 메인 네비게이션바 -->
                 <nav class="gnb">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
+                    <a href="#">신상품</a>
+                    <a href="#">베스트</a>
+                    <a href="#">카테고리</a>
                 </nav>
 
                 <!-- 검색/찜/장바구니 -->
                 <nav class="tnb">
                     <a href="#">
-                        <i class="fas fa-search"></i>
-                        <form action="/search" class="searchss">
+                        <form action="/search" class="search">
                             <label>
                                 <span class="lnr lnr-magnifier"></span>
                                 <input type="text" placeholder="검색어를 입력하세요" id="search">
+                                <i class="fas fa-search"></i>
                             </label>
                         </form>
                     </a>
@@ -60,31 +58,41 @@
 
             <!-- section content > category list -->
 
-            <section id="category-list-sidebar">
+            <div id="category-list-sidebar-wrap">
                 <h2 class="category-list-title">
-                    <a href="#1">Cutlery</a>
+                    <a href="#1">전체</a>
                 </h2>
                 <ul>
                     <li class="category-list-branch-title">
                         <div>
-                            <a href="#">Fork</a>
+                            <a href="#">수저 / 커트러리</a>
                             <button></button>
                         </div>
                         <div>
                             <ul>
                                 <li>
                                     <div>
-                                        <a href="#">dessert</a>
+                                        <a href="#">포크</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <a href="#">pasta</a>
+                                        <a href="#">나이프</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <a href="#">other</a>
+                                        <a href="#">스푼</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">젓가락</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">세트</a>
                                     </div>
                                 </li>
                             </ul>
@@ -92,24 +100,29 @@
                     </li>
                     <li class="category-list-branch-title">
                         <div>
-                            <a href="#">Cup</a>
+                            <a href="#">식기</a>
                             <button></button>
                         </div>
                         <div>
                             <ul>
                                 <li>
                                     <div>
-                                        <a href="#">glass</a>
+                                        <a href="#">공기</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <a href="#">teacup</a>
+                                        <a href="#">대접</a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <a href="#">mug</a>
+                                        <a href="#">면기</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">접시</a>
                                     </div>
                                 </li>
                             </ul>
@@ -117,21 +130,36 @@
                     </li>
                     <li class="category-list-branch-title">
                         <div>
-                            <a href="#">Bowl</a>
+                            <a href="#">컵</a>
                             <button></button>
                         </div>
                         <div>
                             <ul>
                                 <li>
                                     <div>
-                                        <a href="#">wood</a>
+                                        <a href="#">유리컵</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">머그컵</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">플라스틱 / 스테인리스</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <a href="#">커피잔 / 찻잔</a>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                     </li>
                 </ul>
-            </section>
+            </div>
             <!-- //section content > category list//  -->
 
             <!-- section content > ad banner -->
@@ -142,7 +170,7 @@
             <!-- section content > product -->
             <!-- 상품 정렬 (4개상품 한 줄로 노출) -->
             <section id="products" class="product-list-section">
-                <div class="category-title">Cutlery</div>
+                <div class="category-title">전체</div>
                 <!-- <div class="click-more">
                     <a href="#">Next</a>&ensp; | &ensp;<a href="#">Previous</a>
                 </div> -->
@@ -372,30 +400,13 @@
         <!-- footer -->
         <footer>
             <div id="site-map">
-                <ul>
-                    Top Products
-                    <li>Managed Website</li>
-                    <li>Manage Reputation</li>
-                    <li>Power Tools</li>
-                </ul>
-                <ul>
-                    Quick Links
-                    <li>Jobs</li>
-                    <li>Brand Assets</li>
-                    <li>Investor Relations</li>
-                </ul>
-                <ul>
-                    Features
-                    <li>Jobs</li>
-                    <li>Brand Assets</li>
-                    <li>Investor Relations</li>
-                </ul>
-                <ul>
-                    Resources
-                    <li>Guides</li>
-                    <li>Research</li>
-                    <li>Experts</li>
-                </ul>
+                <div>
+                    <span>회사 소개</span>
+                    <span>이용약관</span>
+                    <span>개인정보 처리방침</span>
+                    <span>공지사항</span>
+                    <span>고객센터</span>
+                </div>
             </div>
             <div id="copyright">
                 <div>Copyright ⓒ2022 All rights reserved │ </div>

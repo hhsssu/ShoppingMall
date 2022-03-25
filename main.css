@@ -1,5 +1,5 @@
 /* 웹 폰트 로딩 */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* reset */
 a {
@@ -22,7 +22,7 @@ input {
 
 .wrap {
     font-size: 15px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nanum Gothic', 'Noto Sans KR', 'Lato', sans-serif;
 }
 
 .en {
@@ -86,27 +86,31 @@ header .inner-header .gnb a {
 /* 우측 검색/찜/장바구니 배열 */
 header .inner-header .tnb {
     display: flex;
+    align-items: center;
 }
 
 header .inner-header .tnb a {
     margin-right: 1.5vw;
 }
 
-/* 돋보기아이콘 클릭 시 실행 */
+
+/* 검색창 디자인 */
 header .inner-header .tnb .search {
     border: #ddd solid 0.8px;
     border-radius: 15px;
     padding: 5px 10px;
     background: #fff;
-
-
 }
 
-/* 돋보기아이콘 클릭 시 display: block */
+header .inner-header .tnb .search label {
+    display: flex;
+}
+
 #search {
     background: transparent;
-    display: none;
+    display: block;
 }
+
 
 /* ============ header fin ============ */
 
@@ -354,32 +358,26 @@ section#labels ul li img {
 
 /* =============== footer✅ =============== */
 footer {
-    clear: both;
     padding: 20px 2vw;
     background: #eee;
     text-align: left;
+    font-size: 0.7em;
+    font-weight: normal;
 }
 footer #site-map {
     margin: 0 auto 10vw;
     width: 60%;
 }
 
-footer #site-map ul {
-    float: left;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin-right: 80px;
-}
 
-footer #site-map ul li {
+footer #site-map div span {
     cursor: pointer;
-    font-size: 0.9em;
-    font-weight: normal;
+    margin-right: 1vw;
 }
 
 footer #copyright {
-    clear: both;
+    width: 60%;
+    margin: 0 auto;
 }
 
 /* =============== footer fin =============== */
@@ -393,7 +391,7 @@ footer #copyright {
     padding-top: 17vh;
 }
 
-#category-list-sidebar {
+#category-list-sidebar-wrap {
     flex: 1;
 }
 
