@@ -9,29 +9,24 @@
 
         <!-- 메인 네비게이션바 -->
         <nav class="gnb">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <a href="#">신상품</a>
+            <a href="#">베스트</a>
+            <a href="#">카테고리</a>
         </nav>
 
         <!-- 검색/찜/장바구니 -->
         <nav class="tnb">
-            <ul>
-                <li>
-                    <form action="/search" class="searchss">
-                        <label>
-                            <span class="lnr lnr-magnifier"></span>
-                            <input type="text" placeholder="검색어를 입력하세요" id="search">
-                            <i class="fas fa-search"></i>
-                        </label>
-                    </form>
-                </li>
-                <li><a href="#"><i class="far fa-heart"></i></a></li>
-                <li><a href="#"><i class="fas fa-cart-plus"></i></a></li>
+            <a href="#">
+                <form action="/search" class="search">
+                    <label>
+                        <span class="lnr lnr-magnifier"></span>
+                        <input type="text" placeholder="검색어를 입력하세요" id="search">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </form>
+            </a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="fas fa-cart-plus"></i></a>
             </ul>
         </nav>
     </div>
