@@ -53,33 +53,37 @@
         </header>
         <!-- //header -->
 
+
+        <!-- 상세페이지 컨테이너 -->
         <section class="product-container common-style">
 
             <!-- 상세페이지 콘텐츠 부분 -->
             <div class="pd-content-wrap">
+                
+                <!-- 카테고리 경로 -->
+                <p class="category-text">
+                    <a href="#">카테고리</a>&nbsp;&gt;&nbsp;
+                    <a href="#">컵</a>&nbsp;&gt;&nbsp;
+                    <a href="#">유리컵</a>
+                </p>
 
                 <!-- 해당 상품 이미지/텍스트 상자 -->
                 <div class="pd-detail-wrap">
-                    <p class="category-text">
-                        <a href="#">카테고리</a>&nbsp;&gt;&nbsp;
-                        <a href="#">컵</a>&nbsp;&gt;&nbsp;
-                        <a href="#">유리컵</a>
-                    </p>
                     <!-- 상세 메인 이미지 상자 -->
                     <div class="pd-detail-img-wrap">
                         <div class="main-img">
-                            <img src="http://via.placeholder.com/400" alt="상품 메인 이미지">
+                            <img src="http://via.placeholder.com/450" alt="상품 메인 이미지">
                         </div>
                         <ul class="add-img">
-                            <!-- <li>
-                                <img src="http://via.placeholder.com/400" alt="상품 부가 이미지">
+                            <li>
+                                <img src="http://via.placeholder.com/450" alt="상품 부가 이미지">
                             </li>
                             <li>
-                                <img src="http://via.placeholder.com/400" alt="상품 부가 이미지">
+                                <img src="http://via.placeholder.com/450" alt="상품 부가 이미지">
                             </li>
                             <li>
-                                <img src="http://via.placeholder.com/400" alt="상품 부가 이미지">
-                            </li> -->
+                                <img src="http://via.placeholder.com/450" alt="상품 부가 이미지">
+                            </li>
                         </ul>
                     </div>
 
@@ -89,6 +93,7 @@
                         <div class="pd-info">
                             <h2 class="pd-title">카페 유리컵</h2>
                             <div class="pd-price">10,000원</div>
+                            <div class="pd-dc-price">9,800원 [2%]</div>
                             <div class="info-delivery-wrap">
                                 <div class="info-delivery-title">
                                     <p>배송</p>
@@ -120,7 +125,7 @@
                     <ul class="products-list">
                         <li class="product">
                             <a href="#">
-                                <img src="http://via.placeholder.com/220" alt="상품1">
+                                <img src="http://via.placeholder.com/200" alt="상품1">
                                 <div class="box-info">
                                     <span class="pd_nm">product1</span>
                                     <span class="pd_price">10,000원</span>
@@ -129,7 +134,7 @@
                         </li>
                         <li class="product">
                             <a href="#">
-                                <img src="http://via.placeholder.com/220" alt="상품2">
+                                <img src="http://via.placeholder.com/200" alt="상품2">
                                 <div class="box-info">
                                     <span class="pd_nm" class="pd_nm">product2</span>
                                     <span class="pd_price">10,000원</span>
@@ -138,7 +143,7 @@
                         </li>
                         <li class="product">
                             <a href="#">
-                                <img src="http://via.placeholder.com/220" alt="상품3">
+                                <img src="http://via.placeholder.com/200" alt="상품3">
                                 <div class="box-info">
                                     <span class="pd_nm">product3</span>
                                     <span class="pd_price">10,000원</span>
@@ -147,7 +152,7 @@
                         </li>
                         <li class="product">
                             <a href="#">
-                                <img src="http://via.placeholder.com/220" alt="상품4">
+                                <img src="http://via.placeholder.com/200" alt="상품4">
                                 <div class="box-info">
                                     <span class="pd_nm">product4</span>
                                     <span class="pd_price">10,000원</span>
@@ -161,6 +166,7 @@
                 <div class="pd-detail-explains-wrap">
                     <!-- 상품 상세 설명 -->
                     <div class="pd-detail-explain">
+                        <h2>상품 설명</h2>
                         <img src="http://via.placeholder.com/800x1500" alt="상품 상세 설명 이미지">
                     </div>
 
@@ -211,16 +217,46 @@
 
                     <!-- 상품 리뷰(후기) -->
                     <div class="pd-reviews">
+                        <div class="review-header">
+                            <h2>리뷰</h2>
+                            <span class="review-total-num">1,234</span>
+                        </div>
+                        <div>
+                            <!-- 별점 및 통계 부분 -->
+                            <div class="review-feed-header"></div>
+
+                            <!-- 리뷰 정렬 필터 부분 -->
+                            <div class="review-fillter"></div>
+
+                            <!-- 리뷰 목록 부분 -->
+                            <div class="review-feed-list"></div>
+
+                            <!-- 페이지 부분 -->
+                            <ul class="page-num">
+                                <li>1</li>
+                                <li>2</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <!-- 상품 문의 -->
                     <div class="pd-qna">
-
+                        <!-- 게시판 형식 -->
                     </div>
 
                     <!-- 상품 배송/환불 -->
                     <div class="pd-delivery_refund">
+                        <table class="delivery-info">
+                            <tbody>
+                                <tr>
+                                    <th>배송</th>
+                                    <td>일반배송</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="refund-as-info">
 
+                        </table>
                     </div>
 
                 </div>
