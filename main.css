@@ -23,6 +23,7 @@ input {
 .wrap {
     font-size: 15px;
     font-family: 'Nanum Gothic', 'Noto Sans KR', 'Lato', sans-serif;
+    color: #333;
 }
 
 .en {
@@ -43,9 +44,11 @@ header {
     height: 60px;
     position: fixed;
     z-index: 10;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: #fff;
-    display: flex;
+    display: flex;    
+    border-bottom: #f6f6f6 solid 1px;
     /* background: orange; */
 
 }
@@ -112,7 +115,7 @@ header .inner-header .tnb .search label {
 }
 
 
-/* ============ header fin ============ */
+/* ============ header fin 🟨 ============ */
 
 
 
@@ -176,7 +179,7 @@ section#main-banner-container .click-next-pre {
 
 }
 
-/* ------- contents > main banner fin ------- */
+/* ------- contents > main banner fin 🟨 ------- */
 
 
 /* ------- content common style✅ ------- */
@@ -254,7 +257,7 @@ section#category .products .category-link .box-info .category-nm {
 }
 
 
-/* ------- contents > category fin ------- */
+/* ------- contents > category fin 🟨 ------- */
 
 
 
@@ -306,7 +309,7 @@ section .products-list .product a .box-info .pd_price {
 
 
 
-/* ------- contents > new products / best products fin ------- */
+/* ------- contents > new products / best products fin 🟨 ------- */
 
 
 
@@ -338,13 +341,13 @@ section#labels ul li img {
 
 
 
-/* ------- contents > labels fin ------- */
+/* ------- contents > labels fin 🟨 ------- */
 
 
 
 
 
-/* =============== contents fin ============== */
+/* =============== contents fin 🟨 ============== */
 
 
 
@@ -372,7 +375,26 @@ footer #copyright {
     margin: 0 auto;
 }
 
-/* =============== footer fin =============== */
+footer .goTop {
+    position: fixed;
+    left: 50%;
+    bottom: 60px;
+    z-index: 50;
+    width: 50px;
+    height: 50px;
+    margin-left: 620px;
+    padding-top: 13px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 10px;
+    line-height: 1.1em;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgb(185, 224, 182);
+    border-radius: 50%;
+}
+
+/* =============== footer fin 🟨 =============== */
 
 
 /* ==================== products_page style✅ ========================= */
@@ -399,16 +421,25 @@ footer #copyright {
     margin-bottom: 5vh;
 }
 
-/* ==================== products_page style fin ========================= */
+/* ==================== products_page style fin 🟨 ========================= */
 
 
 
 /* ==================== detail_page style✅ ========================= */
 
+/* 상세페이지 가운데 정렬 */
+.product-container .pd-content-wrap {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
 /* 카테고리 경로 */
 .product-container .pd-content-wrap .category-text {
     font-size: 0.7em;
     margin-bottom: 2vh;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
 }
 
 .product-container .pd-content-wrap .category-text a:last-child {
@@ -424,6 +455,15 @@ footer #copyright {
 /* 상세 메인 이미지 상자 */
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-img-wrap {
     margin: 0 1em;
+    flex: 1;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-img-wrap .main-img {
+    width: 500px;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-img-wrap .main-img img {
+    width: 100%;
 }
 
 /* 상세 메인 부가 이미지 */
@@ -457,6 +497,7 @@ footer #copyright {
 /* 상세 메인 상품 가격, 옵션 정보 상자 */
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap {
     padding: 1em;
+    flex: 1;
 }
 
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-info {
@@ -468,6 +509,8 @@ footer #copyright {
     font-size: 1.5em;
     font-weight: 900;
     margin-bottom: 18px;
+    color: inherit;
+    padding: 0;
 }
 
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-info .pd-price {
@@ -482,13 +525,65 @@ footer #copyright {
     margin-bottom: 18px;
 }
 
-/* 해당 상품과 관련있는 상품 목록 스타일 */
-.product-container .pd-content-wrap .together-pd-wrap {
-    border: #ddd solid 3px;
-    padding: 2em;
-    margin-bottom: 4em;
+/* 상품 상세정보 배송부분 */
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-info .info-delivery-wrap {
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 20px;
 }
 
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-info .info-delivery-wrap .info-delivery-title {
+    margin-right: 15px;
+    font-weight: 900;
+    color: rgb(6, 121, 35);
+    line-height: 1.5em;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-info .info-delivery-wrap .info-delivery-content {
+    line-height: 1.3em;
+}
+
+/* 수량 선택 / 장바구니 / 바로구매 버튼 스타일 */
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount-wrap {
+        display: flex;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount-wrap dt {
+    margin-right: 15px;
+    font-weight: 900;
+    color: rgb(6, 121, 35);
+    line-height: 1.5em;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount-wrap .sale-amount {
+    display: flex;
+    border: #ccc solid 1px;
+    padding: 5px 8px;
+    width: 100px;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount input {
+    width: 40px;
+    text-align: center;
+}
+
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount div {
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+/* 해당 상품과 관련있는 상품 목록 스타일 */
+/* 상품목록 테두리 스타일, 패딩, 마진값 설정 */
+.product-container .pd-content-wrap .together-pd-wrap {
+    border: #ccc solid 4px;
+    padding: 2em;
+    margin: 0 auto 7em;
+}
+
+/* 이 상품과 비슷한 상품 텍스트 스타일 */
 .product-container .pd-content-wrap .together-pd-wrap .together-pd-title {
     margin-bottom: 1.6em;
     font-weight: 700;
@@ -501,8 +596,109 @@ footer #copyright {
 }
 
 .product-container .pd-content-wrap .together-pd-wrap .products-list .product {
-    margin-bottom: 0;
+    margin: 0 auto;
     width: 200px;
 }
 
-/* ==================== detail_page style fin ========================= */
+/* 상품TAB 스타일 */
+.product-container .pd-content-wrap .product-tab-wrap {
+    position: sticky;
+    width: 100%;
+    top: 81px;
+    z-index: 90;
+    background: #fff;
+    border-bottom: #555 solid 1.5px;
+    padding-top: 10px;
+}
+
+.product-container .pd-content-wrap .product-tab-wrap .product-tab {
+    display: flex;
+}
+.product-container .pd-content-wrap .product-tab-wrap .product-tab li.current {
+    border: #888 solid 1px;
+    border-bottom: none;
+    border-left: #555 solid 1.5px;
+    border-right: #555 solid 1.5px;
+    border-top: #555 solid 1.5px;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.product-container .pd-content-wrap .product-tab-wrap .product-tab li {
+    padding: 12px 40px;
+    font-size: 0.9em;
+    margin-bottom: -1.5px;
+}
+
+
+/* 설명, 리뷰, 문의 타이틀 스타일 */
+.product-container .pd-content-wrap h2 {
+    font-weight: 900;
+    color: #555;
+    margin-bottom: 1.6em;
+    padding: 0 2em;
+    font-size: 1.3em;
+}
+
+
+/* 해당 상품 상세 설명 상자 */
+.product-container .pd-content-wrap .pd-detail-explains-wrap {
+    margin-bottom: 10em;
+    padding-top: 100px;
+}
+
+.product-container .pd-content-wrap .pd-detail-explains-wrap .pd-detail-explain {
+    width: 100%;
+}
+
+
+.product-container .pd-content-wrap .pd-detail-explains-wrap .pd-detail-explain img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 상품 상세설명 하단 상품정보 테이블 스타일 */
+.product-container .pd-content-wrap .pd-detail-explains-wrap .pd-essential-info {
+    margin: 100px auto;
+    text-align: left;
+    font-size: 0.7em;
+    width: 50%;
+    line-height: 1.5em;
+
+}
+
+.product-container .pd-content-wrap .pd-detail-explains-wrap .pd-essential-info tr {
+    border-bottom: 1px solid #ccc;
+}
+
+.product-container .pd-content-wrap .pd-detail-explains-wrap .pd-essential-info tr th {
+    padding: 10px;
+    width: 30%;
+    font-weight: 700;
+    color: #555;
+}
+
+.product-container .pd-content-wrap .pd-detail-explains-wrap .pd-essential-info tr td {
+    padding: 10px;
+}
+
+/* 상품 리뷰 스타일 */
+.product-container .pd-content-wrap .pd-reviews .review-header {
+    display: flex;
+    text-align: center;
+}
+
+.product-container .pd-content-wrap .pd-reviews .review-header h2 {
+    padding: 0;
+    margin-right: 10px;
+}
+
+.product-container .pd-content-wrap .pd-reviews .review-header .review-total-num {
+    color: rgb(6, 121, 35);
+    padding: 0;
+    font-weight: 900;
+    font-size: 1.3em;
+}
+
+/* ==================== detail_page style fin 🟨 ========================= */
