@@ -24,6 +24,9 @@ input {
     font-size: 15px;
     font-family: 'Nanum Gothic', 'Noto Sans KR', 'Lato', sans-serif;
     color: #333;
+    /* 기본 텍스트 색상 #333 */
+    /* 연한 회색 테두리 색상 #ccc */
+    /* 카테고리, 타이틀 텍스트 색상 #555 */
 }
 
 .en {
@@ -282,8 +285,8 @@ section .products-list .product {
     margin-bottom: 5vw;
     /* background: #ddd; */
     box-sizing: border-box;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    /* padding-left: 0.5em; */
+    padding-right: 1em;
 }
 
 section .products-list .product a img {
@@ -405,20 +408,42 @@ footer .goTop {
     padding-top: 17vh;
 }
 
-#category-list-sidebar-wrap {
+.category-list-sidebar-wrap {
     flex: 1;
+    /* border: #ccc solid 2px; */
+    margin-right: 3em;
+    line-height: 2.2em;
 }
 
+/* 카테고리 "전체" 텍스트 스타일 */
+.category-list-sidebar-wrap .category-list-title {
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* 각 카테고리 스타일 */
+.category-list-sidebar-wrap ul li.category-list-branch-title {
+    font-weight: 700;
+    color: #555;
+}
+
+/* 소카테고리 스타일 */
+.category-list-sidebar-wrap ul li.category-list-branch-title div ul li {
+    color: #666;
+    padding-left: 1em;
+}
+
+
+/* 상품목록 스타일 */
 #products {
     flex: 4;
 }
 
-#products .category-title {
-    font-size: 1.7em;
-    font-weight: 700;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    margin-bottom: 5vh;
+/* 상품의 카테고리 타이틀 스타일 (상품목록 바로 위의 텍스트) */
+#products .category-text {
+    border: none;
+    /* margin-top: 0.5em; */
 }
 
 /* ==================== products_page style fin 🟨 ========================= */
@@ -435,9 +460,9 @@ footer .goTop {
 }
 
 /* 카테고리 경로 */
-.product-container .pd-content-wrap .category-text {
+.category-text {
     font-size: 0.7em;
-    margin-bottom: 2vh;
+    margin-bottom: 2em;
     padding-bottom: 1em;
     border-bottom: 1px solid #ccc;
 }
