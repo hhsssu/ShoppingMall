@@ -59,6 +59,7 @@ header {
 header .inner-header {
     display: flex;
     width: 60%;
+    /* min-width: 1000px; */
     height: 60px;
     margin: 0 auto;
     align-items: center;
@@ -81,6 +82,7 @@ header .inner-header .gnb {
     /* background: greenyellow; */
     margin-right: 8vw;
     display: flex;
+    min-width: 250px;
 }
 
 header .inner-header .gnb a {
@@ -456,6 +458,8 @@ footer .goTop {
 .product-container .pd-content-wrap {
     margin: 0 auto;
     width: 100%;
+    
+    min-width: 1000px;
     position: relative;
 }
 
@@ -523,6 +527,7 @@ footer .goTop {
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap {
     padding: 1em;
     flex: 1;
+    position: relative;
 }
 
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-info {
@@ -598,6 +603,34 @@ footer .goTop {
 .product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount div {
     font-weight: 700;
     font-size: 1.2em;
+}
+
+/* 장바구니/바로구매 버튼 */
+.sale-basket-btn {
+    display: flex;
+    margin: 20px -3px 0;
+}
+
+/* 장바구니/바로구매 버튼 공통 스타일 */
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn button {
+    padding: 15px 0;
+    min-width: 150px;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background: #fff;
+    border: rgb(6, 121, 35) solid 1px;
+    color: rgb(6, 121, 35);
+    cursor: pointer;
+    bottom: 0;
+    flex: 1;
+    margin: 0 3px;
+}
+
+/* 바로구매 버튼 */
+.product-container .pd-content-wrap .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn button:last-child {
+    background: rgb(6, 121, 35);
+    color: #fff;
 }
 
 /* 해당 상품과 관련있는 상품 목록 스타일 */
