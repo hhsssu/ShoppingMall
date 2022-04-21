@@ -89,11 +89,12 @@
 
                     <!-- 상세 메인 상품 가격, 옵션 정보 상자 -->
                     <div class="pd-detail-info-wrap">
+
                         <!-- 상품 상세 정보 섹션 -->
                         <div class="pd-info">
                             <h2 class="pd-title">카페 유리컵</h2>
                             <div class="pd-price">10,000원</div>
-                            <div class="pd-dc-price">9,800원 [2%]</div>
+                            <div class="pd-dc-price">9,800원 <span>[2%]</span></div>
                             <dl class="info-delivery-wrap">
                                 <dt class="info-delivery-title">
                                     <p>배송</p>
@@ -104,68 +105,46 @@
                                 </dd>
                             </dl>
                         </div>
-                        <!-- 수량 및 옵션 선택 / 장바구니 / 바로구매 버튼 섹션 -->
+
+                        <!-- 수량 및 옵션 선택 / 총 주문금액 섹션 -->
                         <div class="pd-optionform-btn">
                             <dl class="sale-amount-wrap">
                                 <dt>주문수량</dt>
                                 <dd class="sale-amount">
-                                    <div class="up" style="cursor: pointer;">-</div>
-                                    <input type="text" name="amount" value="1">
-                                    <div class="down" style="cursor: pointer;">+</div>
+                                    <select name="amount" id="amount" size="1">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
                                 </dd>
                             </dl>
-                            <div class="sale-basket-btn">
-                                <button id="opbtn01">장바구니</button>
-                                <button id="opbtn02">바로구매</button>
+                            <!-- 총 주문 금액 -->
+                            <div class="total-sum">
+                                <span class="total-text">총 주문 금액</span>
+                                <span class="total-price">
+                                    <span class="total-amount">
+                                        총 수량
+                                        <span>1</span>
+                                        개</span>
+                                    <span>9,800</span>
+                                    원
+                                </span>
+
                             </div>
                         </div>
+
+                        <!-- 장바구니 / 바로구매 버튼 섹션 -->
+                        <div class="sale-basket-btn">
+                            <button id="opbtn01">장바구니</button>
+                            <button id="opbtn02">바로구매</button>
+                        </div>
+
                     </div>
                 </div>
 
-                <!-- 해당 상품과 관련있는 상품 목록 상자 -->
-                <div class="together-pd-wrap">
-                    <div class="together-pd-title">
-                        <p>이 상품과 비슷한 상품</p>
-                    </div>
-                    <ul class="products-list">
-                        <li class="product">
-                            <a href="#">
-                                <img src="http://via.placeholder.com/200" alt="상품1">
-                                <div class="box-info">
-                                    <span class="pd_nm">product1</span>
-                                    <span class="pd_price">10,000원</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="product">
-                            <a href="#">
-                                <img src="http://via.placeholder.com/200" alt="상품2">
-                                <div class="box-info">
-                                    <span class="pd_nm" class="pd_nm">product2</span>
-                                    <span class="pd_price">10,000원</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="product">
-                            <a href="#">
-                                <img src="http://via.placeholder.com/200" alt="상품3">
-                                <div class="box-info">
-                                    <span class="pd_nm">product3</span>
-                                    <span class="pd_price">10,000원</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="product">
-                            <a href="#">
-                                <img src="http://via.placeholder.com/200" alt="상품4">
-                                <div class="box-info">
-                                    <span class="pd_nm">product4</span>
-                                    <span class="pd_price">10,000원</span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
 
                 <!-- 상품 TAB -->
                 <div class="product-tab-wrap">
@@ -227,28 +206,131 @@
                             </tr>
                         </tbody>
                     </table>
-
+                    <!-- 해당 상품과 관련있는 상품 목록 상자 -->
+                    <div class="together-pd-wrap">
+                        <div class="together-pd-title">
+                            <p>이 상품과 비슷한 상품</p>
+                        </div>
+                        <ul class="products-list">
+                            <li class="product">
+                                <a href="#">
+                                    <img src="http://via.placeholder.com/200" alt="상품1">
+                                    <div class="box-info">
+                                        <span class="pd_nm">product1</span>
+                                        <span class="pd_price">10,000원</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="#">
+                                    <img src="http://via.placeholder.com/200" alt="상품2">
+                                    <div class="box-info">
+                                        <span class="pd_nm" class="pd_nm">product2</span>
+                                        <span class="pd_price">10,000원</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="#">
+                                    <img src="http://via.placeholder.com/200" alt="상품3">
+                                    <div class="box-info">
+                                        <span class="pd_nm">product3</span>
+                                        <span class="pd_price">10,000원</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="product">
+                                <a href="#">
+                                    <img src="http://via.placeholder.com/200" alt="상품4">
+                                    <div class="box-info">
+                                        <span class="pd_nm">product4</span>
+                                        <span class="pd_price">10,000원</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <!-- 상품 리뷰(후기) -->
                     <div class="pd-reviews" id="review">
                         <div class="review-header">
                             <h2>리뷰</h2>
                             <span class="review-total-num">3</span>
                         </div>
-                        <div>
-                            <!-- 별점 및 통계 부분 -->
-                            <div class="review-feed-header"></div>
-
+                        <div class="review-feed">
                             <!-- 리뷰 정렬 필터 부분 -->
-                            <div class="review-fillter"></div>
+                            <div class="review-feed-filter">
+                                <div class="all-photo-btn">
+                                    <a href="#">전체</a>
+                                    <a href="#">포토</a>
+                                </div>
+                                <select name="review-filter" id="rv-filter">
+                                    <option value="latest">최신순</option>
+                                    <option value="best">인기순</option>
+                                </select>
+                            </div>
 
                             <!-- 리뷰 목록 부분 -->
-                            <div class="review-feed-list"></div>
-
-                            <!-- 페이지 부분 -->
-                            <ul class="page-num">
-                                <li>1</li>
-                                <li>2</li>
-                            </ul>
+                            <div class="review-feed-list">
+                                <!-- 리뷰 하나 -->
+                                <div class="reviews">
+                                    <div class="reviews-text-box">
+                                        <div class="rv-info">
+                                            <div class="rv-id-box">
+                                                <div class="rv-id">gildong236</div>
+                                                <div class="rv-stars">★★★★★</div>
+                                            </div>
+                                            <div class="rv-date">2022/02/17</div>
+                                        </div>
+                                        <p class="rv-text">
+                                            리뷰내용 후기내용 리뷰내용 후기내용 <br>
+                                            리뷰내용 후기내용 리뷰내용 후기내용 <br>
+                                            리뷰내용 후기내용 리뷰내용 후기내용
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="http://via.placeholder.com/500" alt="후기 사진">
+                                    </div>
+                                </div>
+                                <!-- 리뷰 둘 -->
+                                <div class="reviews">
+                                    <div class="reviews-text-box">
+                                        <div class="rv-info">
+                                            <div class="rv-id-box">
+                                                <div class="rv-id">lee777</div>
+                                                <div class="rv-stars">★★★★★</div>
+                                            </div>
+                                            <div class="rv-date">2022/02/22</div>
+                                        </div>
+                                        <p class="rv-text">
+                                            리뷰내용 후기내용 리뷰내용 후기내용리뷰내용 후기내용 리뷰내용 후기내용리뷰내용 후기내용 리뷰내용 후기내용리뷰내용 후기내용 리뷰내용
+                                            후기내용리뷰내용 후기내용 리뷰내용 후기내용
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="http://via.placeholder.com/500" alt="후기 사진">
+                                    </div>
+                                </div>
+                                <!-- 리뷰 셋 -->
+                                <div class="reviews">
+                                    <div class="reviews-text-box">
+                                        <div class="rv-info">
+                                            <div class="rv-id-box">
+                                                <div class="rv-id">kimmm89</div>
+                                                <div class="rv-stars">★★★★★</div>
+                                            </div>
+                                            <div class="rv-date">2022/03/15</div>
+                                        </div>
+                                        <p class="rv-text">
+                                            리뷰내용 후기내용 리뷰내용 후기내용 <br>
+                                            리뷰내용 후기내용 리뷰내용 후기내용 <br>
+                                            리뷰내용 후기내용 리뷰내용 후기내용
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="http://via.placeholder.com/500" alt="후기 사진">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
