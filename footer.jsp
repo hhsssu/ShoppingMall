@@ -12,5 +12,8 @@
     <div id="copyright">
         <div>Copyright ⓒ2022 All rights reserved │ </div>
     </div>
+    <p class="goTop">
+        ▲ <br> TOP
+    </p>
 </footer>
 <!-- //footer -->
