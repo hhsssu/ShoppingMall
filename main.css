@@ -26,10 +26,11 @@ input {
 
     /* 색상표 */
     color:#00B261
-         #89CAAC
-         #60E7AA
-         #006034
-         #002917
+        #d7f5e7
+        #89CAAC
+        #60E7AA
+        #006034
+        #002917
 
         #CF0071
         #DE96BE
@@ -38,6 +39,7 @@ input {
         #30001A
 
         #FFA500
+        #fff0d4
         #FFE2AD
         #FFCB6A
         #8A5A00
@@ -72,16 +74,20 @@ header {
     z-index: 10;
     padding-top: 10px;
     padding-bottom: 10px;
-    background: #fff;
     display: flex;
-    border-bottom: #f6f6f6 solid 1px;
     /* background: orange; */
-
 }
+
+/* 스크롤시 헤더에 배경색상과 테두리하단선 생성 */
+header.scroll {
+    background: #fff;
+    border-bottom: #f6f6f6 solid 1px;
+}
+
 
 header .inner-header {
     display: flex;
-    width: 60%;
+    width: 70%;
     /* min-width: 1000px; */
     height: 60px;
     margin: 0 auto;
@@ -126,6 +132,13 @@ header .inner-header .tnb a {
 
 /* 검색창 디자인 */
 header .inner-header .tnb .search {
+    border: #333 solid 0.8px;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+/* 스크롤시 배경색상과 테두리색상 변경 */
+header .inner-header .tnb .search.scroll {
     border: #ddd solid 0.8px;
     border-radius: 15px;
     padding: 5px 10px;
@@ -208,12 +221,57 @@ section#main-banner-container .click-next-pre {
 
 /* ------- contents > main banner fin 🟨 ------- */
 
+/* ------- contents > page banner✅ ------- */
+
+section#page-banner-container {
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+    height: 20em;
+    background: #d7f5e7;
+}
+
+section#page-banner-container.basket-bn {
+    background: #fff0d4;
+    /* background: #f8d9ea; */
+}
+
+
+section#page-banner-container .page-banner-img {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+section#page-banner-container .page-banner-img .page-banner-text {
+    /* text-align: center; */
+    position: relative;
+    top: 5rem;
+    /* margin-top: 50px; */
+    font-size: 2.2em;
+    font-weight: 900;
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: default;
+    color: #555;
+}
+
+section#page-banner-container .page-banner-img .page-banner-text p:last-child {
+    color: #555;
+    opacity: 0.5;
+}
+
+section#page-banner-container .page-banner-img img {
+    margin-top: 50px;
+    height: 200px;
+}
+
+/* ------- contents > page banner fin 🟨 ------- */
 
 /* ------- content common style✅ ------- */
 
 section.common-style {
-    width: 60%;
-    max-width: 1008px;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -411,7 +469,7 @@ footer .goTop {
     z-index: 50;
     width: 50px;
     height: 50px;
-    margin-left: 620px;
+    margin-left: 700px;
     padding-top: 13px;
     box-sizing: border-box;
     color: #002917;
@@ -431,7 +489,7 @@ footer .goTop {
 /* 사이드바 / 상품 구분 */
 .product-container {
     display: flex;
-    padding-top: 17vh;
+    padding-top: 10vh;
 }
 
 .category-list-sidebar-wrap {
