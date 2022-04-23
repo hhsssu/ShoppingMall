@@ -58,14 +58,60 @@
         <!-- 배너 자리 -->
         <section id="page-banner-container" class="basket-bn">
             <div class="page-banner-img">
-                    <div class="page-banner-text">
-                        <p>장바구니</p>
-                        <p>Shopping basket</p>
-                    </div>
-                    <img src="./image/basket.png" alt="카테고리 배너 이미지">
+                <div class="page-banner-text">
+                    <p>장바구니</p>
+                    <p>Shopping basket</p>
+                </div>
+                <img src="./image/basket.png" alt="카테고리 배너 이미지">
             </div>
         </section>
         <!-- //section content > page banner -->
+
+        <!-- section content > basket list -->
+        <section id="basket-container">
+            <table class="basket-list">
+
+                <thead class="basket-list-title">
+                    <tr>
+                        <th><input type="checkbox" name="basket" checked></th>
+                        <th colspan="2">상품</th>
+                        <th>가격</th>
+                        <th>수량</th>
+                        <th>총 가격</th>
+                    </tr>
+                </thead>
+
+                <tbody class="basket-list-pd">
+                    <tr class="basket-pd-info">
+                        <td>
+                            <input type="checkbox" name="basket" checked>
+                        </td>
+                        <td class="basket-pd-img">
+                            <img src="./image/basket.png" alt="상품 이미지">
+                        </td>
+                        <td>
+                            <p>대나무 손잡이 바구니</p>
+                            <p>색상: 메이플</p>
+                        </td>
+                        <td>
+                            <p>10,000원</p>
+                        </td>
+                        <td>
+                            <input type="text" name="basket" value="1">
+                            <button>변경</button>
+                        </td>
+                        <td>
+                            <p>10,000원</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="basket-sum">
+            </div>
+        </section>
+        <!-- //section content > basket list -->
+
+
         <!-- footer -->
         <footer>
             <div id="site-map">
