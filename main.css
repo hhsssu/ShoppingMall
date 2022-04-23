@@ -249,18 +249,16 @@ section#page-banner-container .page-banner-img .page-banner-text {
     position: relative;
     top: 5rem;
     /* margin-top: 50px; */
-    font-size: 2.2rem;
+    font-size: 2.2em;
     font-weight: 900;
     font-family: 'Noto Sans KR', sans-serif;
     cursor: default;
     color: #555;
 }
 
-/* 페이지 배너 영문 타이틀 */
 section#page-banner-container .page-banner-img .page-banner-text p:last-child {
     color: #555;
-    opacity: 0.6;
-    font-size: 2rem;
+    opacity: 0.5;
 }
 
 section#page-banner-container .page-banner-img img {
@@ -538,14 +536,11 @@ footer .goTop {
 
 /* ==================== detail_page style✅ ========================= */
 
-.product-detail-container {
-    padding-top: 15vh;
-}
-
 /* 상세페이지 가운데 정렬 */
-.product-detail-container .pd-content-wrap {
+.product-container .pd-content-wrap {
     margin: 0 auto;
     width: 100%;
+
     min-width: 1000px;
     position: relative;
 }
@@ -972,69 +967,3 @@ footer .goTop {
 }
 
 /* ==================== detail_page style fin 🟨 ========================= */
-
-
-/* ==================== basket_page style✅ ========================= */
-#basket-container {
-    width: 70%;
-    margin: 5vh auto;
-    font-size: 0.9rem;
-}
-
-#basket-container .basket-list {
-    width: 100%;
-    margin: 0 auto;
-}
-
-#basket-container .basket-list .basket-list-title {
-    border-bottom: 1.3px solid #ddd;
-    font-weight: 700;
-    text-align: center;
-}
-
-#basket-container .basket-list .basket-list-title th {
-    padding: 0.7rem;
-}
-
-#basket-container .basket-list .basket-list-title th:nth-child(2) {
-    width: 250px;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info {
-    border-bottom: 1px solid #ddd;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info td {
-    padding: 1rem 0;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 1.5em;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) {
-    text-align: left !important;
-    padding-left: 20px;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) > p:nth-child(2) {
-    color: #555;
-    font-size: 0.9em;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info td input {
-    width: 40px;
-    border: 1px solid #ddd;
-    text-align: center;
-    padding: 3px 0;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img {
-    width: 50px;
-}
-
-#basket-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img img {
-    width: 100%;
-}
-
-
-/* ==================== basket_page style fin 🟨 ========================= */
