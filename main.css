@@ -984,24 +984,37 @@ footer .goTop {
     margin: 0 auto;
 }
 
-#basket-container .basket-list .basket-list-title {
+/* 장바구니 전체 선택/삭제 스타일 */
+#basket-container .basket-list-title {
+    display: flex;
     border-bottom: 1.3px solid #ddd;
     font-weight: 700;
-    text-align: center;
+    justify-content: space-between;
 }
 
-#basket-container .basket-list .basket-list-title th {
-    padding: 0.7rem;
+#basket-container .basket-list-title ul {
+    display: flex;
 }
 
-#basket-container .basket-list .basket-list-title th:nth-child(2) {
+#basket-container .basket-list-title li {
+    cursor: pointer;
+}
+
+#basket-container .basket-list-title li::before {
+    border-left: #002917 solid
+}
+
+/* 상품 부분 너비 */
+/* #basket-container .basket-list .basket-list-title th:nth-child(2) {
     width: 250px;
-}
+} */
 
+/* 장바구니 상품 목록 하단 테두리 스타일 */
 #basket-container .basket-list .basket-list-pd .basket-pd-info {
     border-bottom: 1px solid #ddd;
 }
 
+/* 장바구니 상품 목록 스타일 */
 #basket-container .basket-list .basket-list-pd .basket-pd-info td {
     padding: 1rem 0;
     vertical-align: middle;
@@ -1009,16 +1022,19 @@ footer .goTop {
     line-height: 1.5em;
 }
 
+/* 상품 이름/옵션 부분 스타일 */
 #basket-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) {
     text-align: left !important;
     padding-left: 20px;
 }
 
+/* 옵션 텍스트 스타일 */
 #basket-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) > p:nth-child(2) {
     color: #555;
     font-size: 0.9em;
 }
 
+/* 상품 수량 스타일 */
 #basket-container .basket-list .basket-list-pd .basket-pd-info td input {
     width: 40px;
     border: 1px solid #ddd;
@@ -1026,6 +1042,11 @@ footer .goTop {
     padding: 3px 0;
 }
 
+#basket-container .basket-list .basket-list-pd .basket-pd-info td button {
+    font-size: 0.8em;
+}
+
+/* 상품 이미지 사이즈 */
 #basket-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img {
     width: 50px;
 }
@@ -1034,5 +1055,8 @@ footer .goTop {
     width: 100%;
 }
 
+#basket-container .basket-list .basket-list-pd .basket-pd-info i {
+    cursor: pointer;
+}
 
 /* ==================== basket_page style fin 🟨 ========================= */

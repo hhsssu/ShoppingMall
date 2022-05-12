@@ -58,29 +58,29 @@
         <!-- 배너 자리 -->
         <section id="page-banner-container" class="basket-bn">
             <div class="page-banner-img">
-                    <div class="page-banner-text">
-                        <p>장바구니</p>
-                        <p>Shopping basket</p>
-                    </div>
-                    <img src="./image/basket.png" alt="카테고리 배너 이미지">
+                <div class="page-banner-text">
+                    <p>장바구니</p>
+                    <p>Shopping basket</p>
+                </div>
+                <img src="./image/basket.png" alt="카테고리 배너 이미지">
             </div>
         </section>
         <!-- //section content > page banner -->
 
-         <!-- section content > basket list -->
-         <section id="basket-container">
+        <!-- section content > basket list -->
+        <section id="basket-container">
+            <div class="basket-list-title">
+                <ul class="basket-select-all">
+                    <li><input type="checkbox" name="basket" checked></li>
+                    <li>전체선택</li>
+                </ul>
+                <ul class="basket-delete">
+                    <li class="basket-delete-btn">전체삭제</li>
+                    <li></li>
+                    <li class="basket-delete-btn">선택삭제</li>
+                </ul>
+            </div>
             <table class="basket-list">
-
-                <thead class="basket-list-title">
-                    <tr>
-                        <th><input type="checkbox" name="basket" checked></th>
-                        <th colspan="2">상품</th>
-                        <th>가격</th>
-                        <th>수량</th>
-                        <th>총 가격</th>
-                    </tr>
-                </thead>
-
                 <tbody class="basket-list-pd">
                     <tr class="basket-pd-info">
                         <td>
@@ -100,8 +100,28 @@
                             <input type="text" name="basket" value="1">
                             <button>변경</button>
                         </td>
+                        <td><i class="fas fa-trash-alt"></i></td>
+                    </tr>
+                    <tr class="basket-pd-info">
+                        <td>
+                            <input type="checkbox" name="basket" checked>
+                        </td>
+                        <td class="basket-pd-img">
+                            <img src="./image/dishes3.png" alt="상품 이미지">
+                        </td>
+                        <td>
+                            <p>도트무늬 공기</p>
+                            <p>색상: 블루 도트</p>
+                        </td>
                         <td>
                             <p>10,000원</p>
+                        </td>
+                        <td>
+                            <input type="text" name="basket" value="1">
+                            <button>변경</button>
+                        </td>
+                        <td>
+                            <i class="fas fa-trash-alt"></i>
                         </td>
                     </tr>
                 </tbody>
