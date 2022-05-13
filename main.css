@@ -87,7 +87,7 @@ header.scroll {
 
 header .inner-header {
     display: flex;
-    width: 70%;
+    width: 80%;
     /* min-width: 1000px; */
     height: 60px;
     margin: 0 auto;
@@ -127,6 +127,10 @@ header .inner-header .tnb {
 
 header .inner-header .tnb a {
     margin-right: 1.5vw;
+}
+
+header .inner-header .tnb a.sign-in-up {
+    font-size: 0.8rem;
 }
 
 
@@ -354,6 +358,7 @@ section#category .products .category-link .box-info .category-nm {
 section .click-more {
     margin-bottom: 20px;
     text-align: end;
+    padding-right: 1em;
 }
 
 section .products-list {
