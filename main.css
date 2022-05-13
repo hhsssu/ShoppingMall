@@ -303,7 +303,7 @@ section#category .products {
     margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5rem; */
@@ -311,10 +311,14 @@ section#category .products {
 
 /* 카테고리 이미지 영역 */
 section#category .products .category-link {
-    width: 48%;
+    width: 49%;
     margin: 0.2vw;
     /* background: rgb(249, 249, 249); */
     position: relative;
+}
+
+section#category .products .category-link:nth-child(2n-1) {
+    margin-left: 0 !important;
 }
 
 section#category .products .category-link img {
