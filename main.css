@@ -1186,3 +1186,11 @@ footer .goTop {
 }
 
 /* ==================== basket_page style fin 🟨 ========================= */
+
+
+
+/* ==================== main_page login style ✅ ========================= */
+#login-popup-container {
+    background: RGBA(0,0,0,0.4);
+}
+/* ==================== main_page login style fin 🟨 ========================= */
