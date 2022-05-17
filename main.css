@@ -887,20 +887,22 @@ footer .goTop {
 
 .pd-reviews .review-header {
     display: flex;
-    text-align: center;
+    margin-bottom: 1rem;
+    align-items: center;
+    line-height: 1em;
 }
 
 .pd-reviews .review-header h2 {
-    padding: 0;
-    margin-right: 10px;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 1.1em;
 }
 
 /* 리뷰 개수 */
 .pd-reviews .review-header .review-total-num {
     color: #00B261;
-    padding: 0;
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 /* 리뷰 정렬 필터 부분 */
@@ -982,49 +984,75 @@ footer .goTop {
 /* ==================== detail_page style fin 🟨 ========================= */
 
 /* ==================== basket_page style✅ ========================= */
-#basket-container {
+#basket-list-container {
     width: 70%;
     margin: 5vh auto;
     font-size: 0.9rem;
 }
 
-#basket-container .basket-list {
+#basket-list-container .basket-list {
     width: 100%;
     margin: 0 auto;
 }
 
 /* 장바구니 전체 선택/삭제 스타일 */
-#basket-container .basket-list-title {
+#basket-list-container .basket-list-title {
     display: flex;
     border-bottom: 1.3px solid #ddd;
-    font-weight: 700;
     justify-content: space-between;
+    padding-bottom: 0.5em;
 }
 
-#basket-container .basket-list-title ul {
+#basket-list-container .basket-list-title ul {
     display: flex;
+    align-items: center;
+    
 }
 
-#basket-container .basket-list-title li {
+#basket-list-container .basket-list-title .basket-select-all li {
     cursor: pointer;
+    line-height: 1em;
 }
 
-#basket-container .basket-list-title li::before {
-    border-left: #002917 solid
+
+#basket-list-container .basket-list-title .basket-select-all li:first-child {
+    padding-right: 5px;
+}
+
+#basket-list-container .basket-list-title .basket-select-all li input {
+    background: #000;
+}
+
+/* 전체삭제/선택삭제 스타일 */
+#basket-list-container .basket-list-title .basket-delete li > button {
+    cursor: pointer;
+    border: #ddd 1px solid;
+    border-radius: 5px;
+    background: #fff;
+    padding: 0.6em 1em;
+    line-height: 1em;
+}
+
+#basket-list-container .basket-list-title .basket-delete li > button:hover {
+    color: #FFA500;
+}
+
+#basket-list-container .basket-list-title .basket-delete li:nth-child(2) {
+    cursor: default;
 }
 
 /* 상품 부분 너비 */
-/* #basket-container .basket-list .basket-list-title th:nth-child(2) {
+/* #basket-list-container .basket-list .basket-list-title th:nth-child(2) {
     width: 250px;
 } */
 
 /* 장바구니 상품 목록 하단 테두리 스타일 */
-#basket-container .basket-list .basket-list-pd .basket-pd-info {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info {
     border-bottom: 1px solid #ddd;
 }
 
 /* 장바구니 상품 목록 스타일 */
-#basket-container .basket-list .basket-list-pd .basket-pd-info td {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td {
     padding: 1rem 0;
     vertical-align: middle;
     text-align: center;
@@ -1032,40 +1060,129 @@ footer .goTop {
 }
 
 /* 상품 이름/옵션 부분 스타일 */
-#basket-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) {
     text-align: left !important;
     padding-left: 20px;
 }
 
 /* 옵션 텍스트 스타일 */
-#basket-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) > p:nth-child(2) {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(3) > p:nth-child(2) {
     color: #555;
     font-size: 0.9em;
 }
 
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td:nth-child(4) {
+    font-weight: 700;
+}
+
 /* 상품 수량 스타일 */
-#basket-container .basket-list .basket-list-pd .basket-pd-info td input {
+
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td input {
     width: 40px;
     border: 1px solid #ddd;
     text-align: center;
     padding: 3px 0;
+    font-size: 0.8em;
+    line-height: 1em;
 }
 
-#basket-container .basket-list .basket-list-pd .basket-pd-info td button {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td button {
     font-size: 0.8em;
+    border: #ddd 1px solid;
+    padding: 3px 5px;
+    line-height: 1.1em;
+    cursor: pointer;
 }
 
 /* 상품 이미지 사이즈 */
-#basket-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img {
     width: 50px;
 }
 
-#basket-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img img {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info .basket-pd-img img {
     width: 100%;
 }
 
-#basket-container .basket-list .basket-list-pd .basket-pd-info i {
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info i {
     cursor: pointer;
+}
+
+
+/* 상품 결제금액 합산 스타일 */
+#basket-total-container {
+    width: 70%;
+    margin: 0 auto 1rem;
+    position: relative;
+}
+
+/* 상품 결제금액 합산/주문버튼 부분 */
+#basket-total-container>div {
+    width: 300px;
+    line-height: 3rem;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 5rem;
+    padding: 0 20px;
+}
+
+#basket-total-container .basket-total-box {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#basket-total-container .basket-total-box .basket-total tr {
+    font-size: 0.8rem;
+}
+
+#basket-total-container .basket-total-box .basket-total tr th {
+    width: 40%;
+    text-align: start;
+}
+
+#basket-total-container .basket-total-box .basket-total tr td {
+    text-align: end;
+}
+
+/* 금액(숫자)부분 스타일 */
+#basket-total-container .basket-total-box .basket-total tr td > span:first-child {
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+/* 결제예정금액 부분 스타일 */
+#basket-total-container .basket-total-box .basket-total .bk-total {
+    border-top: #ddd 1px solid;
+}
+
+/* 결제예정금액 숫자부분 스타일 */
+#basket-total-container .basket-total-box .basket-total .bk-total > td > span:first-child {
+    color: #F064B1;
+    font-size: 1.1rem;
+}
+
+/* 전체/선택주문 스타일 */
+#basket-total-container div .bk-btn-box {
+    text-align: center;
+}
+
+#basket-total-container div .bk-btn-box .bk-btn {
+    width: 100%;
+    font-size: 1.2rem;
+    background: #FFA500;
+    border-radius: 6px;
+    line-height: 2.5em;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+/* 선택주문 스타일 */
+#basket-total-container div .bk-btn-box .bk-btn:last-child {
+    border: #FFA500 2px solid;
+    background: #fff;
+    color: #FFA500; 
 }
 
 /* ==================== basket_page style fin 🟨 ========================= */
