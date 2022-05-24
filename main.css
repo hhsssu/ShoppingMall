@@ -1,6 +1,6 @@
 /* 웹 폰트 로딩 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 /* reset */
 a {
     color: inherit;
@@ -21,8 +21,9 @@ input {
 }
 
 .wrap {
+    position: relative;
     font-size: 15px;
-    font-family: 'Nanum Gothic', 'Noto Sans KR', 'Lato', sans-serif;
+    font-family: 'NanumSquare', 'Noto Sans KR', 'Lato', sans-serif;
 
     /* 색상표 */
     color:#00B261
@@ -477,7 +478,7 @@ footer .goTop {
     position: fixed;
     left: 90%;
     bottom: 60px;
-    z-index: 50;
+    z-index: 10;
     width: 50px;
     height: 50px;
     /* margin-left: 700px; */
@@ -1190,7 +1191,114 @@ footer .goTop {
 
 
 /* ==================== main_page login style ✅ ========================= */
+/* .wrap {
+    position: relative;
+    위에 추가함
+} */
+/* 로그인 팝업 배경 설정 */
 #login-popup-container {
     background: RGBA(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+}
+
+/* 로그인 팝업 창 스타일 */
+#login-popup-container .login-popup-box {
+    background: #fff;
+    width: 400px;
+    /* height: 500px; */
+    position: fixed;
+    /* fixed 컨테이너 가운데로 정렬 */
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 20%;
+    border-radius: 6px;
+}
+
+/* 로그인 팝업 창 컨텐츠 스타일 */
+#login-popup-container .login-popup-box .login-join-box {
+    width: 90%;
+    margin: 50px auto;
+}
+
+#login-popup-container .login-popup-box .login-join-box .login-text {
+    margin-bottom: 1rem;
+}
+
+/* 상단 로그인 글자 스타일 */
+#login-popup-container .login-popup-box .login-join-box .login-text p {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    cursor: default;
+}
+
+/* 아이디/비밀번호 입력칸 스타일 */
+#login-popup-container .login-popup-box .login-join-box form.idpw-input input{
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: #ddd 1px solid;
+    line-height: 3rem;
+    border-radius: 3px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* 아이디 저장 스타일 */
+#login-popup-container .login-popup-box .login-join-box .login-id-remember {
+    font-size: 0.8rem;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#login-popup-container .login-popup-box .login-join-box .login-id-remember input {
+    margin-right: 0.5em;
+}
+#login-popup-container .login-popup-box .login-join-box .login-id-remember p {
+    cursor: pointer;
+}
+
+/* 로그인 버튼 스타일 */
+#login-popup-container .login-popup-box .login-join-box .login-sumit-btn {
+    margin-bottom: 0.5rem;
+}
+#login-popup-container .login-popup-box .login-join-box button {
+    width: 100%;
+    line-height: 2rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 0.4rem;
+}
+
+#login-popup-container .login-popup-box .login-join-box .login-sumit-btn button {
+    /* width: 100%; */
+    /* border-radius: 3px; */
+    /* font-weight: 700; */
+    line-height: 3rem;
+    font-size: 1rem;
+    background: #00B261;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 아이디/비번찾기, 회원가입 버튼 스타일 */
+#login-popup-container .login-popup-box .login-join-box .mem-search-join {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#login-popup-container .login-popup-box .login-join-box .mem-search-join a {
+    font-size: 0.8rem;
 }
 /* ==================== main_page login style fin 🟨 ========================= */
