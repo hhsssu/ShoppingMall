@@ -101,52 +101,53 @@
                             <h2 class="pd-title">카페 유리컵</h2>
                             <div class="pd-price">10,000원</div>
                             <div class="pd-dc-price">9,800원 <span>[2%]</span></div>
-                            <dl class="info-delivery-wrap">
-                                <dt class="info-delivery-title">
-                                    <p>배송</p>
-                                </dt>
-                                <dd class="info-delivery-content">
-                                    <p>일반배송 3,000원</p>
-                                    <p>(30,000원 이상 구매시 무료배송)</p>
-                                </dd>
-                            </dl>
                         </div>
 
-                        <!-- 수량 및 옵션 선택 / 총 주문금액 섹션 -->
+                        <!-- 배송 정보 / 수량 및 옵션 선택 / 총 주문금액 섹션 -->
                         <div class="pd-optionform-btn">
-                            <dl class="sale-amount-wrap">
-                                <dt>주문수량</dt>
-                                <dd class="sale-amount">
-                                    <select name="amount" id="amount" size="1">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </dd>
-                            </dl>
-                            <!-- 총 주문 금액 -->
-                            <div class="total-sum">
-                                <span class="total-text">총 주문 금액</span>
-                                <span class="total-price">
-                                    <span class="total-amount">
-                                        총 수량
-                                        <span>1</span>
-                                        개</span>
-                                    <span>9,800</span>
-                                    원
-                                </span>
-
-                            </div>
+                            <table class="pd-option-wrap">
+                                <tbody>
+                                    <!-- 배송 안내 -->
+                                    <tr>
+                                        <th>
+                                            배송
+                                        </th>
+                                        <td>
+                                            <p>일반배송 3,000원</p>
+                                            <p>(30,000원 이상 구매시 무료배송)</p>
+                                        </td>
+                                    </tr>
+                                    <!-- 주문 수량 설정 -->
+                                    <tr>
+                                        <th>
+                                            주문수량
+                                        </th>
+                                        <td class="sale-amount">
+                                            <select name="amount" id="amount" size="1">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <!-- 총 주문 금액 -->
+                                    <tr class="total-sum">
+                                        <th class="total-text">총 주문 금액</th>
+                                        <td class="total-price">
+                                            <span class="total-amount"> 총 수량 <span>1</span> 개</span>
+                                            <span>9,800</span>원
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 장바구니 / 바로구매 버튼 섹션 -->
+                            <!-- <div class="sale-basket-btn">
+                                <button id="opbtn01" type="submit">장바구니</button>
+                                <button id="opbtn02" type="submit">바로구매</button>
+                            </div> -->
                         </div>
-
-                        <!-- 장바구니 / 바로구매 버튼 섹션 -->
-                        <div class="sale-basket-btn">
-                            <button id="opbtn01" type="submit">장바구니</button>
-                            <button id="opbtn02" type="submit">바로구매</button>
-                        </div>
-
                     </div>
                 </div>
 

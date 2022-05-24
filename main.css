@@ -23,7 +23,7 @@ input {
 .wrap {
     position: relative;
     font-size: 15px;
-    font-family: 'NanumSquare', 'Noto Sans KR', 'Lato', sans-serif;
+    font-family: 'NanumGothic', 'Noto Sans KR', 'Lato', sans-serif;
 
     /* 색상표 */
     color:#00B261
@@ -630,15 +630,16 @@ footer .goTop {
     font-weight: 700;
 }
 
-
+/* 상품명 스타일 */
 .pd-detail-wrap .pd-detail-info-wrap .pd-info .pd-title {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 800;
     margin-bottom: 18px;
     color: inherit;
     padding: 0;
 }
 
+/* 상품 정가 스타일 */
 .pd-detail-wrap .pd-detail-info-wrap .pd-info .pd-price {
     text-decoration: solid line-through;
     color: #aaa;
@@ -646,6 +647,7 @@ footer .goTop {
     font-size: 1.5em;
 }
 
+/* 상품 할인가 스타일 */
 .pd-detail-wrap .pd-detail-info-wrap .pd-info .pd-dc-price {
     font-size: 1.8em;
     line-height: 1.5em;
@@ -659,43 +661,40 @@ footer .goTop {
 }
 
 
-/* 상품 상세정보 배송부분 */
-.pd-detail-wrap .pd-detail-info-wrap .pd-info .info-delivery-wrap {
-    display: flex;
+/* 상품 상세정보 배송/수량선택 스타일 */
+.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .pd-option-wrap {
+    /* display: flex; */
     /* align-items: center; */
     margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.pd-detail-wrap .pd-detail-info-wrap .pd-info .info-delivery-wrap .info-delivery-title {
-    margin-right: 15px;
-    font-weight: 900;
-    color: #006034;
-    line-height: 1.5em;
-}
-
-.pd-detail-wrap .pd-detail-info-wrap .pd-info .info-delivery-wrap .info-delivery-content {
-    line-height: 1.3em;
-}
-
-/* 수량 선택 스타일 */
-.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn {
-    min-height: 310px;
-    position: relative;
-}
-
-.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount-wrap {
-    display: flex;
-}
-
-.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount-wrap dt {
+.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .pd-option-wrap th {
     margin-right: 15px;
     margin-top: 2px;
     font-weight: 900;
     color: #006034;
     line-height: 1.5em;
+    width: 20%;
+    text-align: end;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
-.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount-wrap .sale-amount {
+/* 배송비 스타일 */
+.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .pd-option-wrap td {
+    line-height: 1.3em;
+}
+
+/* 수량 선택 스타일 */
+/* .pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn {
+    min-height: 310px;
+    position: relative;
+} */
+
+/* 주문 수량 스타일 */
+.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .pd-option-wrap .sale-amount {
     padding-top: 2px;
     width: 100px;
     justify-content: center;
@@ -711,23 +710,18 @@ footer .goTop {
     background: #eee;
 }
 
-.pd-detail-wrap .pd-detail-info-wrap .pd-optionform-btn .sale-amount div {
-    font-weight: 700;
-    font-size: 1.2em;
-}
 
 /* 총 주문 금액 스타일 */
-.total-sum {
+/* .total-sum {
     position: absolute;
     bottom: 0;
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: baseline;
     font-weight: 900;
-}
+} */
 
-.total-sum .total-text {
+/* .total-sum .total-text {
     color: #006034;
 }
 
@@ -739,7 +733,7 @@ footer .goTop {
     font-weight: normal;
     font-size: 0.8em;
     margin-right: 1rem;
-}
+} */
 
 /* 장바구니/바로구매 버튼 */
 .sale-basket-btn {
@@ -1087,6 +1081,13 @@ footer .goTop {
     line-height: 1em;
 }
 
+/* #basket-list-container .basket-list .basket-list-pd .basket-pd-info td input::-webkit-outer-spin-button,
+#basket-list-container .basket-list .basket-list-pd .basket-pd-info td input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    
+} */
+
 #basket-list-container .basket-list .basket-list-pd .basket-pd-info td button {
     font-size: 0.8em;
     border: #ddd 1px solid;
@@ -1233,7 +1234,7 @@ footer .goTop {
 /* 상단 로그인 글자 스타일 */
 #login-popup-container .login-popup-box .login-join-box .login-text p {
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
     cursor: default;
 }
@@ -1270,6 +1271,7 @@ footer .goTop {
 #login-popup-container .login-popup-box .login-join-box .login-sumit-btn {
     margin-bottom: 0.5rem;
 }
+
 #login-popup-container .login-popup-box .login-join-box button {
     width: 100%;
     line-height: 2rem;
